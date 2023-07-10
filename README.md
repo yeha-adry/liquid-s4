@@ -8,12 +8,15 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/liquid-structural-state-space-models/long-range-modeling-on-lra)](https://paperswithcode.com/sota/long-range-modeling-on-lra?p=liquid-structural-state-space-models)
 
 
-# Liquid State Space Models ([Paper](https://arxiv.org/abs/2209.12951))
+# Liquid State Space Models 
 
 This repository provides the implementation of Liquid S4 state-space models. Liquid-S4 takes state-spaces models to another level by utilizing a linearized version of [liquid neural networks](https://github.com/raminmh/liquid_time_constant_networks) at its core. Read the preprint for more details:
-https://arxiv.org/abs/2209.12951
+https://arxiv.org/abs/2209.12951 (or https://openreview.net/pdf?id=g4OTKRKfS7R)
 
 The repository is a recent fork of the S4 repo (https://github.com/HazyResearch/state-spaces). It includes the Liquid-S4 KB and PB kernels.
+
+## Abstract
+A proper parametrization of state transition matrices of linear state-space models (SSMs) followed by standard nonlinearities enables them to efficiently learn representations from sequential data, establishing the state-of-the-art on an extensive series of long-range sequence modeling benchmarks. In this paper, we show that we can improve further when the structured SSM, such as S4, is given by a linear liquid time-constant (LTC) state-space model. LTC neural networks are causal continuous-time neural networks with an input-dependent state transition module, which makes them learn to adapt to incoming inputs at inference. We show that by using a diagonal plus low-rank decomposition of the state transition matrix introduced in S4, and a few simplifications, the LTC-based structured state-space model, dubbed Liquid-S4, improves generalization across sequence modeling tasks with long-term dependencies such as image, text, audio, and medical time-series, with an average performance of 87.32\% on the Long-Range Arena benchmark. On the full raw Speech Command recognition dataset, Liquid-S4 achieves 96.78\% accuracy with a 30\% reduction in parameter counts compared to S4. The additional gain in performance is the direct result of the Liquid-S4's kernel structure that takes into account the similarities of the input sequence samples during training and inference.
 
 ## Setup
 
